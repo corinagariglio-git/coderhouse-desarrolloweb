@@ -1,0 +1,367 @@
+/* Reset básico y tipografía */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* Header estilos */
+
+header {
+  background-color: #2c5aa0;
+  color: #ffffff;
+  padding: calc(1rem + 1vw);
+  text-align: center;
+  background-image: url(../images/imagenLacteos.jpg);
+  background-size: 100%;
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  padding: 1rem;
+  font-family: "DM Serif Text", serif;
+  font-weight: 100;
+  font-style: normal;
+  text-shadow: -6px 1px 5px #000000;
+}
+
+.mensaje-introductorio {
+  font-size:1rem;
+  font-style: italic;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Links de navegacion estilos */
+
+nav {
+  background-color: #1e4080;
+  padding: 1rem 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav a {
+  color: #ffffff;
+  padding: 0.6rem 0.9rem;
+  font-size: 1rem;
+}
+
+a {
+  color: #2c5aa0;
+}
+
+/* Clases generales */
+
+.clase-para-h2 {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #0151ad;
+  font-size: 1.5rem;
+  border-bottom: 0.15rem solid #87ceeb;
+  padding: 0rem 1rem;
+}
+
+.clase-para-h3 {
+  color: #1e4080;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.clase-para-p {
+  padding: 0rem 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+/* Página "Index" estilos */
+
+.recuadro-celeste {
+  background-color: #acd7ff;
+  padding-bottom: 1rem;
+  padding-top: 0.1rem;
+  border-radius: 2rem;
+  margin: 0.8rem;
+}
+
+.acerca-de-nosotros-cuadros {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.acerca-de-nosotros-cuadros div {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 2rem;
+    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.valores-y-mision-cuadros {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.valores-y-mision-cuadros div {
+  background-color: #d4e8fd;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 20rem;
+}
+
+.imagen-central {
+  display: flex;
+    justify-content: center;
+  align-items: center;
+    border-radius: 1rem; 
+    height: 100%;
+}
+
+.imagen-central img {
+  width: 100%;
+  max-width: 70%;
+  height: 100%;  
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.lista {
+  list-style: none;
+  margin-top: 1rem;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+}
+
+/* Página "Países de Exportación" estilos */
+
+.paises-exportacion-cuadros {
+  display: grid;
+  grid-template-columns: 1 fr;
+  gap: 1.8rem;
+  padding: 1rem 1rem;
+}
+
+.paises-exportacion-cuadros div {
+  background-color: #c3e2ff;
+  padding: 1.5rem;
+  border-radius: 1.8rem;
+}
+
+.paises-exportacion-cuadros p {
+  margin-bottom: 0.6rem;
+  text-align: center;
+}
+
+/* Página "Contacto" estilos */
+
+.informacion-contacto-cuadros {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.8rem;
+  padding: 1.2rem 1.2rem;
+}
+
+.informacion-contacto-cuadros div {
+  background-color: #dcf5ff;
+  padding: 1.5rem;
+  border-radius: 1.8rem;
+}
+
+label {
+  font-weight: bold;
+  color: #2c5aa0;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0rem;
+  margin-bottom: 1.2rem;
+  border: 0.1rem solid #ddd;
+  font-size: 1rem;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1.2rem;
+  border: 0.1rem solid #ddd;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #2c5aa0;
+  color: #ffffff;
+  padding: 0.6rem 0.6rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+}
+
+/* Página "Nuestra Historia" estilos */
+
+.linea-del-tiempo {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1.2rem ;
+  background-color: #f8f9fa;
+}
+
+.informacion-cronologica {
+    border: 0.1rem solid #2c5aa0;
+      border-radius: 0.6rem;
+      margin: 0.5rem;
+      padding: 1rem;
+}
+.informacion-cronologica h3 {
+  background-color: #2c5aa0;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 50rem;
+  font-weight: bold;
+  justify-self: center
+}
+.informacion-cronologica h4 {
+  color: #2c5aa0;
+}
+
+/* Página "Productos" estilos */
+
+.tipo-de-producto h3 {
+  font-size: 1.5rem;
+  color: #2c5aa0;
+  text-align: center;
+  background-color: #f0f8ff;
+}
+
+.productos-cuadros {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  
+}
+
+.productos-cuadros div {
+  background-color: #ffeff0;
+      border: 0.15rem solid #2c5aa0;
+      border-radius: 0.6rem;
+      margin: 0.5rem;
+      padding: 1rem;
+}
+
+.productos-cuadros h4 {
+  color: #2c5aa0;
+  font-size: 1.1rem;
+}
+
+.productos-cuadros ul {
+  list-style: none;
+}
+
+.productos-cuadros li {
+  color: #b66038;
+}
+
+/* Footer estilos */
+footer {
+  background-color: #1e4080;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+}
+
+@media only screen and (min-width:800px){
+  header h1 {
+  font-size: 4.5rem;
+}
+.mensaje-introductorio {
+  font-size: 2rem;
+}
+
+nav ul {
+  flex-direction: row;
+}
+
+.acerca-de-nosotros-cuadros {
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: stretch;
+}
+.acerca-de-nosotros-cuadros div {
+  height: 100%;
+}
+
+  .valores-y-mision-cuadros {
+    grid-template-columns: 1fr 1fr 1fr; 
+    align-items: stretch; 
+  }
+
+  .valores-y-mision-cuadros div {
+    display: flex;
+    height: 100%; 
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+  .imagen-central {
+    display: flex;
+    height:100%; 
+    max-height: 25rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+.imagen-central img {
+height:100%;
+max-height: 18rem;
+max-width: 100%;
+}
+
+.paises-exportacion-cuadros {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.informacion-contacto-cuadros {
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.linea-del-tiempo {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.productos-cuadros {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+}
