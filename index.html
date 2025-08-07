@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--BOOTSTRAP-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
     <!--CSS-->
     <link rel="stylesheet" href="./css/styles.css" />
     <!--TIPOGRAFIAS-->
@@ -23,16 +30,50 @@
       </p>
     </header>
 
-    <nav>
-      <ul>
-        <li><a href="./index.html">Inicio</a></li>
-        <li>
-          <a href="./pages/exportCountries.html">Países de Exportación</a>
-        </li>
-        <li><a href="./pages/contact.html">Contacto</a></li>
-        <li><a href="./pages/history.html">Nuestra Historia</a></li>
-        <li><a href="./pages/products.html">Productos</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-md w-100">
+      <div class="container d-flex justify-content-center">
+        <div class="d-flex align-items-center"></div>
+
+        <!--Botón desplegable-->
+        <button
+          class="navbar-toggler mx-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--Menú desplegable-->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav fs-6 w-100 text-start">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/exportCountries.html"
+                >Países de Exportación</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contact.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/history.html"
+                >Nuestra Historia</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/products.html">Productos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <section>
@@ -104,16 +145,66 @@
             manteniendo los más altos estándares de calidad y servicio.
           </p>
           <p>
-                        Ser el puente líder entre la excelencia láctea argentina y los
+            Ser el puente líder entre la excelencia láctea argentina y los
             consumidores internacionales de todo el mundo.
           </p>
         </div>
-    <div class="imagen-central">
-      <img src="./images/imagenLeche.jpg" alt="Leche" />
-    </div>
+
+        <div
+          id="carouselExample"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./images/fotoLeche.jpg"
+                class="d-block w-100"
+                alt="Leche"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/fotoManteca.jpg"
+                class="d-block w-100"
+                alt="Manteca"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/fotoQueso.jpg"
+                class="d-block w-100"
+                alt="Queso"
+              />
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+        <!-- <div class="imagen-central">
+          <img src="./images/imagenLeche.jpg" alt="Leche" />
+        </div> -->
         <div>
           <h3 class="clase-para-h3">
-            <img src="./images/iconoCalidad2.png" alt="Calidad" /> Calidad y Seguridad
+            <img src="./images/iconoCalidad2.png" alt="Calidad" /> Calidad y
+            Seguridad
           </h3>
           <p>
             Nunca comprometemos la calidad, asegurando que cada producto cumpla
@@ -165,5 +256,11 @@
       </p>
       <p>Exportadores de lacteos argentinos de alta calidad a todo el mundo.</p>
     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
