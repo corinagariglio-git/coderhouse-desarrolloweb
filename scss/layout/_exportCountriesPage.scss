@@ -2,15 +2,15 @@
   @extend %gridUnaColumna;
   gap: 1.8rem;
   padding: 1rem 1rem;
-}
 
-.paises-exportacion-cuadros div {
-  background-color: #c3e2ff;
-  padding: 1.5rem;
-  border-radius: 1.8rem;
-}
+  div {
+    background-color: #c3e2ff;
+    padding: 1.5rem;
+    border-radius: 1.8rem;
+  }
 
-.paises-exportacion-cuadros p {
-  margin-bottom: 0.6rem;
-  text-align: center;
+  p {
+    margin-bottom: 0.6rem;
+    text-align: center;
+  }
 }

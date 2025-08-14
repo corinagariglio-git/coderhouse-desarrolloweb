@@ -10,30 +10,30 @@
   @extend %gridUnaColumna;
   gap: 1.5rem;
   padding: 1rem;
-}
 
-.acerca-de-nosotros-cuadros div {
-  background-color: #f8f9fa;
-  padding: 1.5rem;
-  border-radius: 2rem;
+  div {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 2rem;
 
-  @extend %flexDirectionColumn;
-  @extend %flexBasico;
+    @extend %flexDirectionColumn;
+    @extend %flexBasico;
+  }
 }
 
 .valores-y-mision-cuadros {
   @extend %gridUnaColumna;
   gap: 1.5rem;
   padding: 1rem;
-}
 
-.valores-y-mision-cuadros div {
-  background-color: #d4e8fd;
-  border-radius: 2rem;
-  justify-content: center;
-  max-height: 20rem;
+  div {
+    background-color: #d4e8fd;
+    border-radius: 2rem;
+    justify-content: center;
+    max-height: 20rem;
 
-  @extend %flexDirectionColumn;
+    @extend %flexDirectionColumn;
+  }
 }
 
 .carousel-inner img {
@@ -47,14 +47,14 @@
   height: 100%;
 
   @extend %flexBasico;
-}
 
-.imagen-central img {
-  width: 100%;
-  max-width: 70%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 1rem;
+  img {
+    width: 100%;
+    max-width: 70%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
 }
 
 .lista {
