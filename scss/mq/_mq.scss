@@ -1,0 +1,81 @@
+@media only screen and (min-width: 800px) {
+  // Extends
+
+  %gridDosColumnas {
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+  }
+
+  %gridTresColumnas {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: stretch;
+  }
+
+  %gridCuatroColumnas {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: stretch;
+  }
+
+  //Syles
+
+  header h1 {
+    font-size: 4.5rem;
+  }
+  .mensaje-introductorio {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  .acerca-de-nosotros-cuadros {
+    @extend %gridTresColumnas;
+  }
+
+  .acerca-de-nosotros-cuadros div {
+    height: 100%;
+  }
+
+  .valores-y-mision-cuadros {
+    @extend %gridTresColumnas;
+  }
+
+  .valores-y-mision-cuadros div {
+    padding: 0.5rem;
+    height: 100%;
+    justify-content: center;
+
+    @extend %flexDirectionColumn;
+  }
+
+  .imagen-central {
+    height: 100%;
+    max-height: 25rem;
+    flex-direction: column;
+
+    @extend %flexBasico;
+  }
+
+  .imagen-central img {
+    height: 100%;
+    max-height: 18rem;
+    max-width: 100%;
+  }
+
+  .paises-exportacion-cuadros {
+    @extend %gridTresColumnas;
+  }
+
+  .informacion-contacto-cuadros {
+    @extend %gridDosColumnas;
+  }
+
+  .linea-del-tiempo {
+    @extend %gridCuatroColumnas;
+  }
+
+  .productos-cuadros {
+    @extend %gridTresColumnas;
+  }
+}

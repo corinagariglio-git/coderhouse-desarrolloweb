@@ -1,0 +1,15 @@
+%flexBasico {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%gridUnaColumna {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+%flexDirectionColumn {
+  text-align: center;
+  flex-direction: column;
+}

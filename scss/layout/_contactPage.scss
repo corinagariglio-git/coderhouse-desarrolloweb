@@ -1,0 +1,36 @@
+.informacion-contacto-cuadros {
+  @extend %gridUnaColumna;
+  gap: 1.8rem;
+  padding: 1.2rem 1.2rem;
+}
+
+.informacion-contacto-cuadros div {
+  background-color: #dcf5ff;
+  padding: 1.5rem;
+  border-radius: 1.8rem;
+}
+
+label {
+  font-weight: bold;
+  color: #2c5aa0;
+}
+
+input[type="text"] {
+  @include fontSizeColorPadding(1rem, null, 0);
+  width: 100%;
+  margin-bottom: 1.2rem;
+  border: 0.1rem solid #ddd;
+}
+
+input[type="email"] {
+  @include fontSizeColorPadding(1rem, null, 0.6rem);
+  width: 100%;
+  margin-bottom: 1.2rem;
+  border: 0.1rem solid #ddd;
+}
+
+button {
+  @include fontSizeColorPadding(1rem, #ffffff, 0.6rem 0.6rem);
+  background-color: #2c5aa0;
+  border-radius: 0.3rem;
+}

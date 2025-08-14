@@ -1,19 +1,19 @@
-/* Reset básico y tipografía */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@charset "UTF-8";
+.imagen-central, .acerca-de-nosotros-cuadros div, .navbar-nav .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #000000;
-  background-color: #ffffff;
+.productos-cuadros, .linea-del-tiempo, .paises-exportacion-cuadros, .informacion-contacto-cuadros, .valores-y-mision-cuadros, .acerca-de-nosotros-cuadros {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-/* Header estilos */
+.valores-y-mision-cuadros div, .acerca-de-nosotros-cuadros div, .navbar-nav .nav-link {
+  text-align: center;
+  flex-direction: column;
+}
 
 header {
   background-color: #2c5aa0;
@@ -43,22 +43,16 @@ header h1 {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Links de navegacion estilos */
-
 .navbar {
   background-color: #eef4ff;
 }
+
 .navbar-nav .nav-item {
   flex: 1;
 }
 
 .navbar-nav .nav-link {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100%;
-  flex-direction: column;
   white-space: nowrap;
 }
 
@@ -66,32 +60,14 @@ header h1 {
   text-decoration: underline;
 }
 
-/* Clases generales */
-
-.clase-para-h2 {
-  margin-top: 1.5rem;
-  text-align: center;
-  color: #0151ad;
-  font-size: 1.5rem;
-  border-bottom: 0.15rem solid #87ceeb;
-  padding: 0rem 1rem;
-}
-
-.clase-para-h3 {
-  color: #1e4080;
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-  text-align: center;
-}
-
-.clase-para-p {
-  padding: 0rem 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1.5rem;
+footer {
+  color: #ffffff;
   font-size: 1rem;
+  padding: 2rem 1rem;
+  background-color: #1e4080;
+  text-align: center;
+  margin-top: 2rem;
 }
-
-/* Página "Index" estilos */
 
 .recuadro-celeste {
   background-color: #acd7ff;
@@ -102,8 +78,6 @@ header h1 {
 }
 
 .acerca-de-nosotros-cuadros {
-  display: grid;
-  grid-template-columns: 1fr;
   gap: 1.5rem;
   padding: 1rem;
 }
@@ -112,15 +86,9 @@ header h1 {
   background-color: #f8f9fa;
   padding: 1.5rem;
   border-radius: 2rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .valores-y-mision-cuadros {
-  display: grid;
-  grid-template-columns: 1fr;
   gap: 1.5rem;
   padding: 1rem;
 }
@@ -128,8 +96,6 @@ header h1 {
 .valores-y-mision-cuadros div {
   background-color: #d4e8fd;
   border-radius: 2rem;
-  text-align: center;
-  flex-direction: column;
   justify-content: center;
   max-height: 20rem;
 }
@@ -141,9 +107,6 @@ header h1 {
 }
 
 .imagen-central {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 1rem;
   height: 100%;
 }
@@ -157,37 +120,13 @@ header h1 {
 }
 
 .lista {
+  font-size: 1rem;
+  padding: 1rem 1rem;
   list-style: none;
   margin-top: 1rem;
-  padding: 1rem 1rem;
-  font-size: 1rem;
 }
-
-/* Página "Países de Exportación" estilos */
-
-.paises-exportacion-cuadros {
-  display: grid;
-  grid-template-columns: 1 fr;
-  gap: 1.8rem;
-  padding: 1rem 1rem;
-}
-
-.paises-exportacion-cuadros div {
-  background-color: #c3e2ff;
-  padding: 1.5rem;
-  border-radius: 1.8rem;
-}
-
-.paises-exportacion-cuadros p {
-  margin-bottom: 0.6rem;
-  text-align: center;
-}
-
-/* Página "Contacto" estilos */
 
 .informacion-contacto-cuadros {
-  display: grid;
-  grid-template-columns: 1fr;
   gap: 1.8rem;
   padding: 1.2rem 1.2rem;
 }
@@ -203,35 +142,47 @@ label {
   color: #2c5aa0;
 }
 
-input[type="text"] {
+input[type=text] {
+  font-size: 1rem;
+  padding: 0;
   width: 100%;
-  padding: 0rem;
   margin-bottom: 1.2rem;
   border: 0.1rem solid #ddd;
-  font-size: 1rem;
 }
 
-input[type="email"] {
-  width: 100%;
+input[type=email] {
+  font-size: 1rem;
   padding: 0.6rem;
+  width: 100%;
   margin-bottom: 1.2rem;
   border: 0.1rem solid #ddd;
-  font-size: 1rem;
 }
 
 button {
-  background-color: #2c5aa0;
   color: #ffffff;
-  padding: 0.6rem 0.6rem;
-  border-radius: 0.3rem;
   font-size: 1rem;
+  padding: 0.6rem 0.6rem;
+  background-color: #2c5aa0;
+  border-radius: 0.3rem;
 }
 
-/* Página "Nuestra Historia" estilos */
+.paises-exportacion-cuadros {
+  gap: 1.8rem;
+  padding: 1rem 1rem;
+}
+
+.paises-exportacion-cuadros div {
+  background-color: #c3e2ff;
+  padding: 1.5rem;
+  border-radius: 1.8rem;
+}
+
+.paises-exportacion-cuadros p {
+  margin-bottom: 0.6rem;
+  text-align: center;
+}
 
 .linea-del-tiempo {
-  display: grid;
-  grid-template-columns: 1fr;
   padding: 1.2rem;
   background-color: #f8f9fa;
 }
@@ -242,37 +193,39 @@ button {
   margin: 0.5rem;
   padding: 1rem;
 }
+
 .informacion-cronologica h3 {
-  background-color: #2c5aa0;
   color: #ffffff;
+  font-size: 1.3rem;
   padding: 0.5rem 1rem;
+  background-color: #2c5aa0;
   margin: 0.5rem;
   border-radius: 50rem;
   font-weight: bold;
   justify-self: center;
 }
+
 .informacion-cronologica h4 {
   color: #2c5aa0;
+  font-size: 1.1rem;
+  padding: 0;
 }
 
-/* Página "Productos" estilos */
-
 .tipo-de-producto h3 {
-  font-size: 1.5rem;
   color: #2c5aa0;
+  font-size: 1.5rem;
+  padding: 0;
   text-align: center;
   background-color: #f0f8ff;
 }
 
 .productos-cuadros {
-  display: grid;
-  grid-template-columns: 1fr;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
 .productos-cuadros div {
-  background-color: #ffeff0;
+  background-color: #fff1e0;
   border: 0.15rem solid #2c5aa0;
   border-radius: 0.6rem;
   margin: 0.5rem;
@@ -282,6 +235,7 @@ button {
 .productos-cuadros h4 {
   color: #2c5aa0;
   font-size: 1.1rem;
+  padding: 0;
 }
 
 .productos-cuadros ul {
@@ -289,78 +243,85 @@ button {
 }
 
 .productos-cuadros li {
-  color: #b66038;
-}
-
-/* Footer estilos */
-footer {
-  background-color: #1e4080;
-  color: #ffffff;
-  text-align: center;
-  padding: 2rem 1rem;
-  margin-top: 2rem;
+  color: #b3660e;
 }
 
 @media only screen and (min-width: 800px) {
+  .informacion-contacto-cuadros {
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+  }
+  .productos-cuadros, .paises-exportacion-cuadros, .valores-y-mision-cuadros, .acerca-de-nosotros-cuadros {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: stretch;
+  }
+  .linea-del-tiempo {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: stretch;
+  }
   header h1 {
     font-size: 4.5rem;
   }
   .mensaje-introductorio {
     font-size: 2rem;
   }
-
   nav ul {
     flex-direction: row;
-  }
-
-  .acerca-de-nosotros-cuadros {
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: stretch;
   }
   .acerca-de-nosotros-cuadros div {
     height: 100%;
   }
-
-  .valores-y-mision-cuadros {
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: stretch;
-  }
-
   .valores-y-mision-cuadros div {
     padding: 0.5rem;
     height: 100%;
-    flex-direction: column;
     justify-content: center;
-    text-align: center;
   }
-
   .imagen-central {
-    display: flex;
     height: 100%;
     max-height: 25rem;
     flex-direction: column;
-    justify-content: center;
   }
-
   .imagen-central img {
     height: 100%;
     max-height: 18rem;
     max-width: 100%;
   }
-
-  .paises-exportacion-cuadros {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .informacion-contacto-cuadros {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .linea-del-tiempo {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-
-  .productos-cuadros {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 }
+/* Reset básico y tipografía */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* Clases generales */
+.clase-para-h2 {
+  color: #0151ad;
+  font-size: 1.5rem;
+  padding: 0rem 1rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  border-bottom: 0.15rem solid #87ceeb;
+}
+
+.clase-para-h3 {
+  color: #1e4080;
+  font-size: 1.1rem;
+  padding: 0.4rem 0rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.clase-para-p {
+  font-size: 1rem;
+  padding: 1rem 2rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

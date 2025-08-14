@@ -1,0 +1,26 @@
+header {
+  background-color: #2c5aa0;
+  color: #ffffff;
+  padding: calc(1rem + 1vw);
+  text-align: center;
+  background-image: url(../images/imagenLacteos.jpg);
+  background-size: 100%;
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header h1 {
+  @include fontSizeColorPadding(2.5rem, null, 1rem);
+  font-family: "DM Serif Text", serif;
+  font-weight: 100;
+  font-style: normal;
+  text-shadow: -6px 1px 5px #000000;
+}
+
+.mensaje-introductorio {
+  font-size: 1rem;
+  font-style: italic;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,31 @@
+.tipo-de-producto h3 {
+  @include fontSizeColorPadding(1.5rem, #2c5aa0, 0);
+  text-align: center;
+  background-color: #f0f8ff;
+}
+
+.productos-cuadros {
+  @extend %gridUnaColumna;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.productos-cuadros div {
+  background-color: #fff1e0;
+  border: 0.15rem solid #2c5aa0;
+  border-radius: 0.6rem;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
+.productos-cuadros h4 {
+  @include fontSizeColorPadding(1.1rem, #2c5aa0, 0);
+}
+
+.productos-cuadros ul {
+  list-style: none;
+}
+
+.productos-cuadros li {
+  color: #b3660e;
+}

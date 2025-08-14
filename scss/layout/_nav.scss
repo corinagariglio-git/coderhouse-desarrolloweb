@@ -1,0 +1,18 @@
+.navbar {
+  background-color: #eef4ff;
+}
+.navbar-nav .nav-item {
+  flex: 1;
+}
+
+.navbar-nav .nav-link {
+  height: 100%;
+  white-space: nowrap;
+
+  @extend %flexDirectionColumn;
+  @extend %flexBasico;
+}
+
+.navbar-nav .nav-link:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,45 @@
+@import "./utilities/extends";
+@import "./utilities/mixins";
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/footer";
+@import "./layout/indexPage";
+@import "./layout/contactPage";
+@import "./layout/exportCountriesPage";
+@import "./layout/historyPage";
+@import "./layout/productsPage";
+@import "./mq/mq";
+
+/* Reset básico y tipografía */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* Clases generales */
+
+.clase-para-h2 {
+  @include fontSizeColorPadding(1.5rem, #0151ad, 0rem 1rem);
+  margin-top: 1.5rem;
+  text-align: center;
+  border-bottom: 0.15rem solid #87ceeb;
+}
+
+.clase-para-h3 {
+  @include fontSizeColorPadding(1.1rem, #1e4080, 0.4rem 0rem);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.clase-para-p {
+  @include fontSizeColorPadding(1rem, null, 1rem 2rem);
+}

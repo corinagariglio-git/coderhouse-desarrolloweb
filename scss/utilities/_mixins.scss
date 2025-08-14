@@ -1,0 +1,7 @@
+@mixin fontSizeColorPadding($size, $color, $padding) {
+  @if $color != null {
+    color: $color;
+  }
+  font-size: $size;
+  padding: $padding;
+}
