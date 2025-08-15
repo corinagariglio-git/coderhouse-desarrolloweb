@@ -18,12 +18,13 @@
 
   //Styles
 
-  header h1 {
-    font-size: 4.5rem;
-  }
-
-  .mensaje-introductorio {
-    font-size: 2rem;
+  header {
+    h1 {
+      font-size: 4.5rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
   }
 
   nav ul {

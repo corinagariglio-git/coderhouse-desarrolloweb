@@ -1,5 +1,11 @@
 .recuadro-celeste {
-  background-color: #acd7ff;
+  background: #161173;
+  background: linear-gradient(
+    332deg,
+    rgb(136, 187, 255) 0%,
+    rgb(176, 202, 255) 34%,
+    rgb(232, 240, 255) 100%
+  );
   padding-bottom: 1rem;
   padding-top: 0.1rem;
   border-radius: 2rem;
@@ -12,7 +18,11 @@
   padding: 1rem;
 
   div {
-    background-color: #f8f9fa;
+    background: linear-gradient(
+      176deg,
+      rgba(242, 250, 255, 1) 0%,
+      rgba(199, 233, 255, 1) 100%
+    );
     padding: 1.5rem;
     border-radius: 2rem;
 
@@ -27,7 +37,13 @@
   padding: 1rem;
 
   div {
-    background-color: #d4e8fd;
+    background: #f7f2ff;
+    background: radial-gradient(
+      circle,
+      rgba(247, 242, 255, 1) 0%,
+      rgba(190, 159, 252, 0.68) 0%,
+      rgba(247, 242, 255, 1) 100%
+    );
     border-radius: 2rem;
     justify-content: center;
     max-height: 20rem;

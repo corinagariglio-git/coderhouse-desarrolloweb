@@ -4,7 +4,13 @@
   padding: 1rem 1rem;
 
   div {
-    background-color: #c3e2ff;
+    background: #e0f1ff;
+    background: linear-gradient(
+      90deg,
+      rgba(224, 241, 255, 1) 0%,
+      rgba(148, 203, 255, 1) 87%,
+      rgba(66, 164, 255, 0.65) 100%
+    );
     padding: 1.5rem;
     border-radius: 1.8rem;
   }
